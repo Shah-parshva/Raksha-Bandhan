@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Dancing Script', cursive;
+  background: #fff0f5;
+  color: #c71585;
+  overflow-x: hidden;
+  transition: background 0.5s;
+  font-size: 1.1rem;
+}
+
+/* Optional night mode */
+.night-mode {
+  background: #0c0c1d;
+  color: #fff;
+}
+
+/* Music toggle button */
+.night-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Title animation */
+.typewriter h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin: 40px 0;
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Countdown section */
+.countdown {
+  text-align: center;
+  background: #ffe0ed;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 20px auto;
+  width: fit-content;
+  box-shadow: 0 0 10px #ffc0cb;
+}
+
+/* Gift box */
+.gift-box {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.gift-box img {
+  width: 130px;
+  animation: pulse 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Surprise message */
+.surprise-message {
+  display: none;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background: rgba(255, 240, 245, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 0 20px pink;
+}
+
+.fireflies {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+/* Photo gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Scroll letter section */
+.scroll-letter {
+  text-align: center;
+  background: #fff8fc;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 15px #ffb6c1;
+}
+
+.letter-content {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Voice wish (play button section) */
+.voice-wish {
+  text-align: center;
+  margin: 30px;
+}
+
+.voice-wish h2 {
+  margin-bottom: 15px;
+}
+
+.voice-wish button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 12px;
+  border: none;
+  background-color: #ff69b4;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.voice-wish button:hover {
+  background-color: #e0559e;
+}
+
+.voice-wish audio {
+  margin-top: 10px;
+  width: 250px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .typewriter h1 {
+    font-size: 1.8em;
+    margin: 20px 10px;
+  }
+
+  .countdown {
+    width: 90%;
+    font-size: 1em;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery img {
+    width: 90%;
+  }
+
+  .scroll-letter {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .letter-content {
+    font-size: 1em;
+  }
+
+  .voice-wish audio {
+    width: 90%;
+  }
+
+  .voice-wish button {
+    width: 100px;
+    margin: 8px;
+    font-size: 0.9em;
+  }
+
+  .gift-box img {
+    width: 100px;
+  }
+
+  .surprise-message {
+    font-size: 0.95em;
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .fireflies {
+    width: 80px;
+  }
+}  

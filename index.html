@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Raksha Bandhan Diya Don 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="startCountdown()">
+
+  <div class="typewriter">
+    <h1>Happy Raksha Bandhan, Diya Don 💖</h1>
+  </div>
+
+  <!-- 🎵 Music Toggle Button BELOW the heading -->
+  <div class="music-toggle-wrapper">
+   <center><button class="music-toggle" onclick="toggleMusic()">🎵 Toggle Music</button></center>
+  </div>
+
+  <div class="countdown">
+    <h2>⏳ Raksha Bandhan Countdown</h2>
+    <p id="timer"></p>
+  </div>
+
+  <div class="gift-box" onclick="openGift()">
+    <img src="assets/p2.webp" alt="Gift Box">
+  </div>
+
+  <div class="surprise-message" id="surpriseMessage" style="display: none;">
+    <img src="assets/4.jpg" class="fireflies" />
+    <p>To my sweetest sister Diya Don,<br>Your smile lights my world 🌟<br>I’m always with you 💖</p>
+  </div>
+
+  <div class="gallery">
+    <img src="assets/1.jpg" alt="Memory 1">
+    <img src="assets/3.jpg" alt="Memory 2">
+    <img src="assets/2.jpg" alt="Memory 3">
+    <img src="assets/5.jpg" alt="Memory 4">
+  </div>
+
+  <div class="scroll-letter">
+    <h2>My Letter To You 💌</h2>
+    <div class="letter-content">
+      <p>Dear Don,<br><br>
+      On this special Rakhi, I just want to say<br>
+      You're my strength, my joy, my everything every day.<br>
+      Thank you for being the beautiful soul that you are.<br>
+      Happy Raksha Bandhan 💖<br><br>
+      With love,<br>Your Brother (or Kaka 😃)</p>
+    </div>
+  </div>
+
+  <div class="voice-wish">
+    <h2>🎧 My Voice Wish for You</h2>
+    <button onclick="playWish()">Play Wish</button>
+    <audio id="wishAudio" src="assets/message.mp3"></audio>
+  </div>
+
+  <audio id="bg-music" src="assets/Raksha Bandhan Instrumental.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
