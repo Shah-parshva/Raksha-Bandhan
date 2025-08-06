@@ -65,7 +65,7 @@ body {
 }
 
 .gift-box img {
-  width: 130px;
+  width: 200px;
   animation: pulse 2s infinite;
   cursor: pointer;
 }
