@@ -5,32 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Happy Raksha Bandhan Diya Don 💖</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body onload="startCountdown()">
 
+  <!-- Heading with typewriter effect -->
   <div class="typewriter">
     <h1>Happy Raksha Bandhan, Diya Don 💖</h1>
   </div>
 
   <!-- 🎵 Music Toggle Button BELOW the heading -->
   <div class="music-toggle-wrapper">
-   <center><button class="music-toggle" onclick="toggleMusic()">🎵 Toggle Music</button></center>
+    <button class="music-toggle" onclick="toggleMusic()">🎵 Toggle Music</button>
   </div>
 
+  <!-- Countdown Section -->
   <div class="countdown">
     <h2>⏳ Raksha Bandhan Countdown</h2>
     <p id="timer"></p>
   </div>
 
+  <!-- Gift Box -->
   <div class="gift-box" onclick="openGift()">
     <img src="assets/rakhi.webp" alt="Gift Box">
   </div>
 
+  <!-- Surprise Message -->
   <div class="surprise-message" id="surpriseMessage" style="display: none;">
     <img src="assets/4.jpg" class="fireflies" />
     <p>To my sweetest sister Diya Don,<br>Your smile lights my world 🌟<br>I’m always with you 💖</p>
   </div>
 
+  <!-- Photo Gallery -->
   <div class="gallery">
     <img src="assets/1.jpg" alt="Memory 1">
     <img src="assets/6.jpg" alt="Memory 6">
@@ -40,6 +46,7 @@
     <img src="assets/7.jpg" alt="Memory 7">
   </div>
 
+  <!-- Scroll Letter -->
   <div class="scroll-letter">
     <h2>My Letter To You 💌</h2>
     <div class="letter-content">
@@ -52,13 +59,22 @@
     </div>
   </div>
 
+  <!-- 🎶 Background Music Toggle Button AFTER the letter -->
+  <div class="music-toggle-wrapper">
+    <button class="music-toggle" onclick="toggleMusic()">🎵 Toggle Music</button>
+  </div>
+
+  <!-- Voice Wish Section -->
   <div class="voice-wish">
-    <h2>🎧 My Voice Wish for You</h2>
+    <h2>🎧 My Voice Wish for You💖</h2>
     <button onclick="playWish()">Play Wish</button>
     <audio id="wishAudio" src="assets/message.mp3"></audio>
   </div>
 
+  <!-- Background Music -->
   <audio id="bg-music" src="assets/Raksha Bandhan Instrumental.mp3" loop></audio>
+
+  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>

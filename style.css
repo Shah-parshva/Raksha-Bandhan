@@ -1,3 +1,4 @@
+/* Reset & base styles */
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +20,7 @@ body {
   color: #fff;
 }
 
-/* Music toggle button */
+/* Fixed night mode toggle (optional feature, not used currently) */
 .night-toggle {
   position: fixed;
   top: 20px;
@@ -34,6 +35,29 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* 🎵 Music toggle button styles */
+.music-toggle-wrapper {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.music-toggle {
+  padding: 12px 24px;
+  background-color: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.music-toggle:hover {
+  background-color: #e0559e;
+  transform: scale(1.05);
+}
+
 /* Title animation */
 .typewriter h1 {
   text-align: center;
@@ -43,8 +67,8 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px);}
-  to { opacity: 1; transform: translateY(0);}
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Countdown section */
@@ -159,7 +183,12 @@ body {
   width: 250px;
 }
 
-/* Responsive design for mobile */
+/* Animation for gift reveal */
+.animate-reveal {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Mobile responsive design */
 @media (max-width: 768px) {
   .typewriter h1 {
     font-size: 1.8em;
@@ -212,4 +241,9 @@ body {
   .fireflies {
     width: 80px;
   }
-}  
+
+  .music-toggle {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}

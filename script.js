@@ -1,14 +1,19 @@
 // Countdown to Raksha Bandhan
+let countdownInterval;
+
 function startCountdown() {
   const date = new Date("August 9, 2025 00:00:00").getTime();
   const timer = document.getElementById("timer");
 
-  setInterval(() => {
+  clearInterval(countdownInterval); // Avoid multiple intervals on reload
+
+  countdownInterval = setInterval(() => {
     const now = new Date().getTime();
     const dist = date - now;
 
     if (dist <= 0) {
       timer.innerHTML = "🎉 It's Raksha Bandhan Today!";
+      clearInterval(countdownInterval);
       return;
     }
 
@@ -25,7 +30,7 @@ function startCountdown() {
 function openGift() {
   const surprise = document.getElementById("surpriseMessage");
   surprise.style.display = "block";
-  surprise.classList.add("animate-reveal"); // optional animation class
+  surprise.classList.add("animate-reveal"); // Add animation if defined in CSS
 }
 
 // Toggle background music
